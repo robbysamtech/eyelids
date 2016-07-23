@@ -6,7 +6,8 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/activity_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -26,16 +27,54 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <FrameLayout
+        <!--FrameLayout
             android:id="@+id/content_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" -->
+
+            <!--ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/buttonPeople"
+                android:background="@drawable/btselector"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                />
 
 
-        <include layout="@layout/transparentbutton" />
+            <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button2"
+                android:id="@+id/buttonGroup"
+                android:background="@drawable/btselector"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                />
 
+            <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button3"
+                android:id="@+id/buttonOther"
+                android:background="@drawable/btselector"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                />
 
+            <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click me for animate"
+                android:layout_marginTop="340dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/buttonAnimate"/-->
 
-    </RelativeLayout>
+        <!--include layout="@layout/transparentbutton" /0-->
+
+        <!--/FrameLayout-->
+
+    </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -76,11 +76,13 @@ public class MapFragment extends SupportMapFragment implements OnMapReadyCallbac
             @Override
             public View getInfoContents(Marker marker) {
                 View view = getLayoutInflater(null).inflate(R.layout.view_info, null);
-                ((TextView) view.findViewById(R.id.title)).setText(marker.getTitle());
-                ((TextView) view.findViewById(R.id.details)).setText(marker.getSnippet());
+//                ((TextView) view.findViewById(R.id.title)).setText(marker.getTitle());
+//                ((TextView) view.findViewById(R.id.details)).setText(marker.getSnippet());
                 return view;
             }
         });
+
+
 
     }
 

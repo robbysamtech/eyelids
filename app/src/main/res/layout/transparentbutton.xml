@@ -2,6 +2,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transparentbutton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="80dp"
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
-        android:id="@+id/button"
+        android:id="@+id/buttonPeople"
         android:background="@drawable/btselector"
         android:layout_marginTop="10dp"
     />
@@ -22,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button2"
-        android:id="@+id/button2"
+        android:id="@+id/buttonGroup"
         android:background="@drawable/btselector"
         android:layout_marginTop="10dp"
         />
@@ -31,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button3"
-        android:id="@+id/button3"
+        android:id="@+id/buttonOther"
         android:background="@drawable/btselector"
         android:layout_marginTop="10dp"
         />
