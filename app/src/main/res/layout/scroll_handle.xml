@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/transparentbutton"
+    android:id="@+id/scroll_handle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="80dp"
+    android:layout_marginTop="100dp"
     android:layout_marginLeft="20dp"
     android:orientation="vertical">
 
     <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/buttonPeople"
-        android:background="@drawable/btselector"
-        android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Button"
+    android:id="@+id/buttonPeople"
+    android:background="@drawable/btselector"
     />
 
 
@@ -25,7 +24,7 @@
         android:text="New Button2"
         android:id="@+id/buttonGroup"
         android:background="@drawable/btselector"
-        android:layout_marginTop="10dp"
+
         />
 
     <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
@@ -34,8 +33,19 @@
         android:text="New Button3"
         android:id="@+id/buttonOther"
         android:background="@drawable/btselector"
-        android:layout_marginTop="10dp"
+
         />
 
-    </LinearLayout>
+    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/scroll"
+        android:background="@drawable/scroll_handle_selector"
+        android:layout_marginTop="30dp"
+        />
 
+
+
+
+</FrameLayout>

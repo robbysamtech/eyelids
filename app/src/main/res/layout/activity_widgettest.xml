@@ -8,5 +8,5 @@
     tools:context="com.c4d.oyster.mobile.WidgetTestActivity">
 
     <include layout="@layout/toolbar" />
-    <!--include layout="@layout/transparentbutton" /-->
+    <!--include layout="@layout/action_buttons" /-->
 </android.support.design.widget.CoordinatorLayout>

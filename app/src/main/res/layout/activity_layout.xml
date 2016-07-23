@@ -71,7 +71,7 @@
                 android:layout_marginLeft="10dp"
                 android:id="@+id/buttonAnimate"/-->
 
-        <!--include layout="@layout/transparentbutton" /0-->
+        <!--include layout="@layout/action_buttons" /0-->
 
         <!--/FrameLayout-->
 
