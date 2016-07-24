@@ -3,6 +3,7 @@ package com.c4d.oyster.mobile;
 import android.app.Activity;
 import android.media.Image;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,15 +102,35 @@ public class ScrollHandleFragment extends Fragment
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        for (int i = 0; i < buttons.length; i++) {
+                        for (int i = 1; i < buttons.length; i++) {
                             int newPositionX = positionStartX;
-                            int newPositionY =  (buttons[0].getTop() + (i == 0 ? 0 : i * 5)) + (i == 0 ? 0 : (buttons[0].getHeight() * i));
+                            //int newPositionY =  (buttons[0].getTop() + (i == 0 ? 0 : i * 5)) + (i == 0 ? 0 : (buttons[0].getHeight() * i));
 
                             FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-                            params.setMargins(newPositionX, newPositionY, buttons[i].getWidth(), buttons[i].getHeight());
+                            params.setMargins(newPositionX, (i*65), buttons[i].getWidth(), buttons[i].getHeight());
                             buttons[i].setLayoutParams(params);
                             layout.removeView(buttons[i]);
                             layout.addView(buttons[i]);
+
+
+                            int smallMoveTimes = buttons[i-1].getHeight()+5;
+                            System.out.print(smallMoveTimes);
+
+                            for(int j=0;j<smallMoveTimes; j++)
+                            {
+                                int bu = buttons[0].getTop();
+                                int newPositionY = ((i-1)*65)+((j+1));
+                                System.out.print(newPositionY);
+                                params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+                                params.setMargins(newPositionX, newPositionY, buttons[i].getWidth(), buttons[i].getHeight());
+                                buttons[i].setLayoutParams(params);
+                                layout.removeView(buttons[i]);
+                                layout.addView(buttons[i]);
+                                layout.requestLayout();
+
+
+                            }
+
                     }
                 }});
             }
@@ -142,6 +163,7 @@ public class ScrollHandleFragment extends Fragment
                             buttons[i].setLayoutParams(params);
                             layout.removeView(buttons[i]);
                             layout.addView(buttons[i]);
+                            layout.requestLayout();
                         }
                     }
                 });
