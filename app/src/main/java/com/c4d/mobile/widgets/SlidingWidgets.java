@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 /**
  * Created by Robert on 7/3/2016.
-Test Kinjal
+Test Kinjal 123
  */
 public class SlidingWidgets
 {
