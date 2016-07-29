@@ -23,6 +23,7 @@ public class SlidingWidgets
 
     public void animate(View v, FrameLayout layout)
     {
+        //Kinjal
         int positionStartX = buttons[0].getLeft();
         int positionStartY = buttons[0].getTop();
 
@@ -30,7 +31,7 @@ public class SlidingWidgets
 
         for(int i=0; i < buttons.length; i++)
         {
-            int newPositionX = positionStartX;//+ (buttons[i-1].getWidth()*i)+(10*i)
+            int newPositionX = positionStartX;;//+ (buttons[i-1].getWidth()*i)+(10*i)
            // int newPositionY = positionStartY;//S+ (i==0?0:20);
 
             int newPositionY = positionStartY = (buttons[0].getTop()+(i==0?0:i*20))+(i==0?0:(buttons[i].getHeight()*i));
